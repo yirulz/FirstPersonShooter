@@ -5,15 +5,10 @@ using UnityEngine;
 public class LookAtTarget : MonoBehaviour
 {
 
-    // Use this for initialization
-    void Start()
+    public Transform lookAtTarget;
+
+    public void Update()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        transform.LookAt(lookAtTarget);
     }
 }
